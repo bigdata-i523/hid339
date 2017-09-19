@@ -55,7 +55,7 @@ Just use one type and delete the line with
 paper2:
    type: project
    type: report
-   author: 
+   author: Hady Sylla
    - Gregor von Laszewski
    hid:
    - 000
