@@ -17,10 +17,10 @@ owner:
 
 ```
 paper1:
-   author: 
+   author: Hady Sylla
    - Gregor von Laszewski
    - Fugang Wang
-   hid:
+   hid:339
    - 000
    - 001
    title: This is my paper about xyz
@@ -35,9 +35,9 @@ paper1:
 
 ```
 paper2:
-   author: 
+   author: Hady Sylla
    - Gregor von Laszewski
-   hid:
+   hid:339
    - 000
    title: This is my paper about the other abc
    abstract: This paper showcases tis and that and the other in regards to abc
