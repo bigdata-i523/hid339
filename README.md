@@ -17,7 +17,7 @@ paper1:
    - Hady Sylla
    hid:
    - 339
-   title: This is my paper about xyz
+   title: This is my paper about big data application for treatment of breast cancer
    abstract: This paper showcases this and that and the other
    url: https://github.com/bigdata-i523/hid339/paper1/paper1.pdf
    type: latex
