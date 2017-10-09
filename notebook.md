@@ -20,4 +20,4 @@
 9/22/17 Wrote the introduction of paper1
 
 # Meeting
-9/8/17 Online
+9/18/17 Online
