@@ -21,7 +21,7 @@ paper1:
    abstract: This paper showcases this and that and the other
    url: https://github.com/bigdata-i523/hid339/paper1/paper1.pdf
    type: latex
-   status: in progress
+   status: 100%
    chapter: Health
 ```
    
