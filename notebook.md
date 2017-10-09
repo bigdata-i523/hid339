@@ -18,3 +18,6 @@
 # Writing
 9/10/17 Choosed paper1 topic
 9/22/17 Wrote the introduction of paper1
+
+# Meeting
+9/8/17 Online
