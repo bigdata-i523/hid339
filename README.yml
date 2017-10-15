@@ -1,0 +1,26 @@
+---
+owner:
+    hid: 339
+    name: Hady Sylla
+    url: https://github.com/bigdata-i523/hid339
+paper1:
+    abstract: This paper showcases this and that and the other
+    author:
+        - Hady Sylla
+    chapter: Health
+    hid:
+        - 339
+    status: 100%
+    title: Big data application for treatment of breast cancer
+    type: latex
+    url: https://github.com/bigdata-i523/hid339/paper1/paper1.pdf
+paper2:
+    abstract: This paper showcases tis and that and the other
+    author:
+        - Hady Sylla
+    hid:
+        - 0
+    status: in progress
+    title: Benchmarking a BigData Docker deployment
+    type: latex
+    url: https://github.com/bigdata-i523/sample-pid000/project/report.pdf
