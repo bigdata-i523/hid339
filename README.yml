@@ -15,11 +15,12 @@ paper1:
     type: latex
     url: https://github.com/bigdata-i523/hid339/paper1/paper1.pdf
 paper2:
+    review: Nov 6 2017
     abstract: This paper showcases tis and that and the other
     author:
         - Hady Sylla
     hid:
-        - 0
+        - 339
     status: in progress
     title: Benchmarking a BigData Docker deployment
     type: latex
