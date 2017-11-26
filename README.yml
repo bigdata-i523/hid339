@@ -26,3 +26,15 @@ paper2:
     title: Benchmarking a BigData Docker deployment
     type: latex
     url: https://github.com/bigdata-i523/sample-pid000/project/report.pdf
+project:
+    abstract: >
+        Discussion of ways ths Big Data Analytics can be used to
+        diagnose cornery artery disease
+    author:
+        - Hady Sylla
+    hid:
+        - 332
+    status: In progress
+    title: Diagnosis of Coronary Artery Disease Using Big Data Analysis
+    type: latex
+    url: https://github.com/bigdata-i523/hid339/project
