@@ -88,6 +88,11 @@ Coronary illness (CHD) is a noteworthy reason for mortality and bleakness in cre
 As of late, be that as it may, there have been specialized advances that have permitted to a great degree high-thickness informational collections to be developed from people. Methods, for example, genomics, proteomics and metabonomics (a frameworks way to deal with ex-amining the adjustments in hundreds or thousands of low-mol-ecular-weight metabolites in an in place tissue or biofluid9) offer the possibility of effectively recognizing people with specific malady or lethal states. Of these methods, NMR-based metabonomics offers a few particular preferences in a clinical setting. To begin with, it can be completed on standard arrangements of serum, plasma or urine10,11, evading the requirement for master arrangements of cell RNA and ace tein required for genomics and proteomics, respectively12– 14. Second, huge numbers of the hazard factors effectively recognized, (for example, levels of different lipids) are little atom metabolites that will add to the metabonomic informational collection.
 
 \section{Analytic}
+
+Figure \ref{F:readdata} shows ....
+
+\begin{figure}[htb]
+
 \begin{lstlisting}
 In [2]: import matplotlib.pyplot as plt
     % matplotlib inline
@@ -100,7 +105,12 @@ In [4]:from sklearn.ensemble import RandomForestClassifier
         df=pd.read_excel('Z-Alizadeh sani dataset.xlsx')
         df.head()
 \end{lstlisting}
-\includegraphics[width=0.95\columnwidth]
+\caption{Read data}\label{F:readdata}
+\end{figure}
+
+%\begin{figure}[htb]
+%\includegraphics[width=0.95\columnwidth]
+%\end{figure}
 
 \begin{lstlisting}
 In [6]:def extract_col(df,col_name):
