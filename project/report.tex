@@ -22,7 +22,7 @@
   keywordstyle=\color{blue},
   commentstyle=\color{dkgreen},
   stringstyle=\color{mauve},
-  breaklines=true,
+  breaklines=true, 
   breakatwhitespace=true
   tabsize=3
 }
@@ -106,10 +106,6 @@ In [4]:from sklearn.ensemble import RandomForestClassifier
 \end{lstlisting}
 \caption{Read data}\label{F:readdata}
 \end{figure}
-
-%\begin{figure}[htb]
-%\includegraphics[width=0.95\columnwidth]
-%\end{figure}
 
 \begin{lstlisting}
 In [6]:def extract_col(df,col_name):
@@ -271,9 +267,6 @@ max_depth=clf.best_params_['max_depth'])
 In [24]:importance
 \end{lstlisting}
 
-%\includegraphics[width=0.95\columnwidth]
-
-%\includegraphics[width=0.95\columnwidth]
 
 \begin{lstlisting}
 Importance	Std
@@ -283,8 +276,6 @@ Importance	Std
 This table show the importance of each feature in the diagnostic of CAD. Based on the analysis the age, HTN,  DM, BP, Typical chest pain, Non-Anginal  CP, T  inversion, Q  wave,  ST elevation, PR, and ST depression are the features with the highest impact on CAD.
 
 Variable significance is figured restrictively to a given acknowledgment notwithstanding for reproduced datasets. This decision which is criticizable if the goal is to achieve a decent estimation of a basic steady, is predictable with remaining as near as conceivable to the exploratory circumstance managing a given dataset\cite{GENUER20102225}.
-
-% \includegraphics[width=0.95\columnwidth]
 
 \begin{lstlisting}
 
