@@ -184,7 +184,8 @@ In [5]:from sklearn.feature_extraction import DictVectorizer
 and label encoding them to get binary
 features}\label{taking-all-categorical-features-that-have-only-2-levels-and-label-encoding-them-to-get-binary-features}
 Numerous variable choice strategies depend on the participation of variable significance for positioning and model estimation to create, assess and think about a group of models. Following Kohavi and John (1997) and Guyon and Elisseff (2003), it is common to recognize three sorts of variable determination techniques: "channel" for which the score of variable significance does not rely upon a given model outline strategy; "wrapper" which incorporate the expectation execution in the score figuring; lastly "implanted" which join all the more firmly factor choice and model estimation \cite{GENUER20102225}.
-\includegraphics[width=0.95\columnwidth]
+
+% \includegraphics[width=0.95\columnwidth]
 
 \begin{lstlisting}
 
@@ -271,9 +272,10 @@ max_depth=clf.best_params_['max_depth'])
 In [24]:importance
 \end{lstlisting}
 
-\includegraphics[width=0.95\columnwidth]
+%\includegraphics[width=0.95\columnwidth]
 
-\includegraphics[width=0.95\columnwidth]
+%\includegraphics[width=0.95\columnwidth]
+
 \begin{lstlisting}
 Importance	Std
 \end{lstlisting}
@@ -282,7 +284,8 @@ Importance	Std
 This table show the importance of each feature in the diagnostic of CAD. Based on the analysis the age, HTN,  DM, BP, Typical chest pain, Non-Anginal  CP, T  inversion, Q  wave,  ST elevation, PR, and ST depression are the features with the highest impact on CAD.
 
 Variable significance is figured restrictively to a given acknowledgment notwithstanding for reproduced datasets. This decision which is criticizable if the goal is to achieve a decent estimation of a basic steady, is predictable with remaining as near as conceivable to the exploratory circumstance managing a given dataset\cite{GENUER20102225}.
-\includegraphics[width=0.95\columnwidth]
+
+% \includegraphics[width=0.95\columnwidth]
 
 \begin{lstlisting}
 
