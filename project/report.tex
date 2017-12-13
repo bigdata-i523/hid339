@@ -68,12 +68,15 @@ Presently big data does not productively contribute to enhancing healthcare. In 
     
 \subsection{Introduction}
 
+The Coronary artery disease (CAD) comes about when atherosclerotic plaques develops in the coronary arteries giving rise to the narrowing of coronary luminal, and sometimes, occlusion, which leads to heart failure or a sudden cardiac failure. In western nations, CAD is among the killer  diseases. It is important for people understand the CAD”s pathophysiology, how to control its development, identifying and effective innovation of the cardiovascular risk elements, and how to diagnose and treat it in early stages, and its reversible stages. The experts consider big data mining technique as “gold standard” for diagnosing CAD and it is common in use. However, big data mining is an expensive and invasion procedure that requires a high-level of technological experience and latest technology thus the medical experts cannot use it to screen many patients or treat them.  Due to this, many health facilities utilizes other noninvasive tools to diagnose CAD. The most popular of these methods are stress echocardiography (ECHO), electrocardiogram (ECG), and scintigraphy or SPECT. Additionally, the clinical set ups currently use the coronary magnetic resonance angiography (CMRA) MSCT or EBCT. The objective of this study is showing how using big data mining technique to diagnose the Coronary Artery Disease is the best way to control heart attacks and deaths. The study discusses the features in the big data mining tool, how they derive the results, and discussion of the results. Additionally, the research gives way to future studies and offers recommendations to improve the CAD complication field. 
 Data mining is a technique of finding hidden information in a database. Nowadays, several fields use data mining as it has different applications like scientific discoveries, in entrepreneurship, and fraud detention. Data mining calculations work on databases, in which each information archive has several attributes.  One of these attributes is the class label, which discovers the data category. The data mining algorithms people use in problems solving are association rule mining, classification, regression analysis and clustering.
-To classify algorithms, a researcher requires a learning phase on a labeled data set, which makes him/her make a decision on the missing test record class label. In the learning phase, a scientist constructs a classification model to predict the data label class label using its values features. Specialist categorizes heart complications as cardiovascular and cardiomyopathy disorders. The Coronary Artery Disease (CAD) is a major cardiomyopathy complication subgroup which causes disability, serious illness, and even death as the disease affect oxygen and blood supply to the heart muscles. The early symptoms of heart disease comprise pain in the center of the chest or a sense of numbness, and palpitation. Other signs are fainting fits or dizzy spells, and dyspnea on exertion. 	Due to the grave nature of heart failures, it is important to find out its causes. Currently, the major goal of many scientific pursues is making accurate diagnosis of cardiac complications. The researchers collect a great deal of information while examining CAD patients, and by processing the information they reveal how the main features of cardiac disorders relate (e.g. the amount of cholesterol, blood pressure, etc.) and these complications’ occurrence probability.
+To classify algorithms, a researcher requires a learning phase on a labeled data set, which makes him/her make a decision on the missing test record class label. In the learning phase, a scientist constructs a classification model to predict the data label class label using its values features. Specialist categorizes heart complications as cardiovascular and cardiomyopathy disorders. The Coronary Artery Disease (CAD) is a major cardiomyopathy complication subgroup which causes disability, serious illness, and even death as the disease affect oxygen and blood supply to the heart muscles. The early symptoms of heart disease comprise pain in the center of the chest or a sense of numbness, and palpitation. Other signs are fainting fits or dizzy spells, and dyspnea on exertion. 
+Due to the grave nature of heart failures, it is important to find out its causes. Currently, the major goal of many scientific pursues is making accurate diagnosis of cardiac complications. The researchers collect a great deal of information while examining CAD patients, and by processing the information they reveal how the main features of cardiac disorders relate (e.g. the amount of cholesterol, blood pressure, etc.) and these complications’ occurrence probability. The next chapter discusses several research articles that discuss this topic and relate it to what this study’s findings.
+
 
 \section{Background}
 
- The aiagnoses CAD using HRV features and applies several algorithms like SVM, CPAR, C 4.5 and CMAR to them by expressing the performance in terms of Recall, TP, Precision, and TP \citep{ali}. From the study by Lee et al., the SVM algorithm exhibits an excellent performance. Another research by Srivinivas et al. (2010) archives an accuracy of eighty-four percent by probing into why the clogging of the main heart vessels i.e. the right coronary artery, the left circumflex artery, and the left anterior descending coronary artery.	Kavitha and Ramakrishnan (2010) use the genetic and neutral algorithms to diagnose CAD and were successful in ensuring the technique works. In another study, Wang and Hoy (2005) employ features like blood pressure, sex, smoking, age, high-density lipoprotein cholesterol (HDL), and cholesterol to diagnose CAD. Wang and Hoy (2005) also uses the Framingham function to perform the CAD diagnosis.  Another study by Palaniappan and Awang (2008) draws upon a limited count of the features the paper mentions above regarding three different data mining algorithms, which are the Naïve Bayes, neural network, and decision. The results from their research show an accuracy rate of 85.53 percent. Shantakumar and Kumaraswamy (2009) use thirteen features and neural network algorithm to design a system which predicts heart attack.	Apparently, for all studies reviewers conduct regarding this field, the work of some physical examination and the ECG features in the diagnosis of CAD is not clear.  To address this issue in the current literature, the latest studies investigate the effect of a wide set of physical examination and ECG features while diagnosing CAD. These modern features the analysis includes are the Q wave, dyspnea, T inversion, New York Heart Association’s functional class,  ST elevation, and the ST depression. So far, the scientists have not conducted studies regarding these features’s context. Amongst the entire data mining associations rule, algorithms, and classifications is where the researchers select the mining techniques basing on the aim of the study. The study constructs a dataset from the information it gets from three hundred and three impromptu visitors (two hundred and sixteen patients) to Shaheed Rajaei Cardiovascukar, Medical and Research Center. Then the research uses the dataset to analyze the impacts of different ECG , demographic, and clinical features while diagnosing  CAD. The study utilizes different classification algorithms to evaluate the dataset; these include proposed ensemble, Naïve Bayes, and SMO algorithm. Furthermore, it employs ten-fold cross-validation to assess the accuracy of the evaluations. The research uses the findings of the standard angiographic tool as a basis for comparison to assess the ability to predict the classification algorithms. Below are the aims of the study:
+ The study by  \cite{ali} daiagnoses of coronary altery disease using HRV features and applies several algorithms like SVM, CPAR, C 4.5 and CMAR to them by expressing the performance in terms of Recall, TP, Precision, and TP \citep{ali}. From the study by Lee et al., the SVM algorithm exhibits an excellent performance. Another research by Srivinivas et al. (2010) archives an accuracy of eighty-four percent by probing into why the clogging of the main heart vessels i.e. the right coronary artery, the left circumflex artery, and the left anterior descending coronary artery.	Kavitha and Ramakrishnan (2010) use the genetic and neutral algorithms to diagnose CAD and were successful in ensuring the technique works. In another study, Wang and Hoy (2005) employ features like blood pressure, sex, smoking, age, high-density lipoprotein cholesterol (HDL), and cholesterol to diagnose CAD. Wang and Hoy (2005) also uses the Framingham function to perform the CAD diagnosis.  Another study by Palaniappan and Awang (2008) draws upon a limited count of the features the paper mentions above regarding three different data mining algorithms, which are the Naïve Bayes, neural network, and decision. The results from their research show an accuracy rate of 85.53 percent. Shantakumar and Kumaraswamy (2009) use thirteen features and neural network algorithm to design a system which predicts heart attack.	Apparently, for all studies reviewers conduct regarding this field, the work of some physical examination and the ECG features in the diagnosis of CAD is not clear.  To address this issue in the current literature, the latest studies investigate the effect of a wide set of physical examination and ECG features while diagnosing CAD. These modern features the analysis includes are the Q wave, dyspnea, T inversion, New York Heart Association’s functional class,  ST elevation, and the ST depression. So far, the scientists have not conducted studies regarding these features’s context. Amongst the entire data mining associations rule, algorithms, and classifications is where the researchers select the mining techniques basing on the aim of the study. The study constructs a dataset from the information it gets from three hundred and three impromptu visitors (two hundred and sixteen patients) to Shaheed Rajaei Cardiovascukar, Medical and Research Center. Then the research uses the dataset to analyze the impacts of different ECG , demographic, and clinical features while diagnosing  CAD. The study utilizes different classification algorithms to evaluate the dataset; these include proposed ensemble, Naïve Bayes, and SMO algorithm. Furthermore, it employs ten-fold cross-validation to assess the accuracy of the evaluations. The research uses the findings of the standard angiographic tool as a basis for comparison to assess the ability to predict the classification algorithms. Below are the aims of the study:
 I.	The analysis of the technique to predict CAD and prevent highly troublesome and invasive procedures like angiography;
 II.	Detection of the features efficiency in the CAD diagnosis;
 III.Anticipation of the CAD incidence by using data mining tools;
@@ -82,11 +85,14 @@ V.	Finding efficient analytical techniques to evaluate the collected dataset; an
 VI.	Analyzing the tool for CAD diagnosis by test and training sets.
 The other part of the research paper’s organization is as follows: Section 3 evaluates the dataset, Section 4 does the introduction of algorithms, and section 6 gives the conclusions and recommendations for future research regarding the topic.
 
-
-
 \section{Dataset}
 For this project I will use Z-Alizadeh Sani aataset for the data analuysis.
-    
+The dataset elements comprise of ECG features, demographics, and symptoms and physical examinations. 
+The class attribute is Cath which the angiography determines. If the diameter narrowing is bigger than or equivalent to fifty percent, the class value is CAD, Normal otherwise. In the features the study analyses above, “DM” means the history of diabetes mellitus, “HTN” is the history of hypertension, and “Ex-smoker” refers to candidates with a past smoking character. Additionally, “FH” is an individual’s heart disease history in the first-degree relatives, and “Current Smoker” means someone who smokes. Moreover, the study uses the discretizationranges it offers in the Braunwald’s Heart Disease book for enriching the dataset.
+
+\subsection{Methodology}
+
+The study employs three classification algorithms to evaluate the dataset. In this part, the paper describes the data mining algorithms I uses to analyze the dataset.
 
 \section{Risk factors}
 \par In spite of the fact that an extensive variety of hazard factors for coronary heart dis-ease have been distinguished from populace ponders, these measures, separately or in blend, are inadequately pow-erful to give a solid, noninvasive conclusion of the nearness of coronary illness. Here we demonstrate that pat-tern-acknowledgment systems connected to proton atomic mag-netic reverberation (1H-NMR) spectra of human serum can effectively analyze the nearness, as well as the seriousness, of coronary illness. Utilization of super-vised halfway minimum squares-discriminant examination to orthogo-nal flag amended informational collections permits >90\% of subjects with stenosis of every one of the three noteworthy coronary vessels to be distin-guished from subjects with angiographically ordinary coro-nary supply routes, with a specificity of >90\%. Our examinations appear out of the blue a system fit for giving an accu-rate, noninvasive and fast conclusion of coronary heart dis-facilitate that can be utilized clinically, either in populace screening or to permit compelling focusing of medicines, for example, statins.
@@ -104,26 +110,14 @@ Machine learning utilizes features (i.e. factors or properties) to create predic
 
 I installed the following packages in the Python environment, and load the data using panda Dataframe. Data exploration, manipulation, and visualization start with loading data, be it from files or from a URL. Pandas has become the go-to library for all things data analysis in Python.
 
-import matplotlib.pyplot as plt
-
-from sklearn.metrics import accuracy_score
-
-from sklearn.ensemble import RandomForestClassifier
-
-import pandas as pd
-
-from sklearn.preprocessing import LabelEncoder
-
-import numpy as np
-
-df=pd.read_excel('Z-Alizadeh sani dataset.xlsx')
+\includegraphics[width=0.95\columnwidth]{project/images/Untitled1.png}
 
 I am using the describe() method that will give me basic statistics for every column in the dataset. This method will allow me to Generates descriptive statistics that summarize the central tendency, dispersion and shape of a dataset.
 df.head()
 
 \begin{table}[]
 \centering
-\caption{My caption}
+\caption{Dastaset Description}
 \label{my-label}
 \begin{tabular}{llllllllllllllllllllll}
 Age & Weight & Length & Sex & BMI   & DM        & HTN & Current Smoker & EX-Smoker & FH & ... & K   & Na  & WBC & Lymph & Neut & PLT & EF-TTE & Region RWMA & VHD & Cath   &        \\
@@ -143,18 +137,11 @@ For a better visualization of the data, I will generate a histogram with the fol
 
 Data preparation for data analysis is a pivotal step to take in any big data analysis. This involve manipulation of data into a form suitable for further analysis and processing. It is a process that involves many different tasks and which cannot be fully automated. Many of the data preparation activities are routine, tedious, and time consuming
 
-cols = df.column
-num_cols = df._get_numeric_data().columns
+\includegraphics[width=0.95\columnwidth]{project/images/Untitled3.png}
 
-cat_cols=list(set(cols) - set(num_cols))
+\subsection{Selection of Features}
 
-cat_cols.remove('VHD')
-
-cat_cols.remove('Cath')
-
-cat_cols.remove('BBB')
-
-cat_cols
+While selecting the element, the study considers the data gain measurement. Among the features, the research selects sixteen with the highest information gain and starts applying algorithms to them. Data gain shows how an element can divide several classes. For instance, is a feature separates the two classes completely; it has the highest information gain.
 
 This layout The features with High Confidence in Predicting coronary altery disease:
 
@@ -179,85 +166,24 @@ This layout The features with High Confidence in Predicting coronary altery dise
     'Systolic Murmur']
 \subsection{Fitting our Encoder}
 
-df[cat_cols]=df[cat_cols].apply(LabelEncoder()
-.fit_transform)
+\includegraphics[width=0.95\columnwidth]{project/images/Untitled5.png}
 
-One hot encoding our multiple level features: 'VHD' and 'BBB
-'
-from sklearn.feature_extraction import DictVectorizer:
+\subsection{Splitting into train and test}\
 
-
-def encode_onehot(df, cols):
-vec = DictVectorizer()
-vec_data = pd.DataFrame(vec.fit_transform(df[cols].to_dict('records')).toarray())
-vec_data.columns = vec.get_feature_names()
-vec_data.index = df.index
-    
-df = df.drop(cols, axis=1)
-df = df.join(vec_data)
-return df
-X = encode_onehot(df, cols=['BBB'])
-X1 =encode_onehot(X, cols=['VHD'])
-X1.columns
-
-Index(['Age', 'Weight', 'Length', 'Sex', 'BMI', 'DM', 'HTN', 'Current Smoker',
-       'EX-Smoker', 'FH', 'Obesity', 'CRF', 'CVA', 'Airway disease',
-       'Thyroid Disease', 'CHF', 'DLP', 'BP', 'PR', 'Edema',
-       'Weak Peripheral Pulse', 'Lung rales', 'Systolic Murmur',
-       'Diastolic Murmur', 'Typical Chest Pain', 'Dyspnea', 'Function Class',
-       'Atypical', 'Nonanginal', 'Exertional CP', 'LowTH Ang', 'Q Wave',
-       'St Elevation', 'St Depression', 'Tinversion', 'LVH',
-       'Poor R Progression', 'FBS', 'CR', 'TG', 'LDL', 'HDL', 'BUN', 'ESR',
-       'HB', 'K', 'Na', 'WBC', 'Lymph', 'Neut', 'PLT', 'EF-TTE', 'Region RWMA',
-       'Cath', 'BBB=LBBB', 'BBB=N', 'BBB=RBBB', 'VHD=Moderate', 'VHD=N',
-       'VHD=Severe', 'VHD=mild'],
-        dtype='object')
-
-
-Getting our pred variable and removing from orignal df
-y=df["Cath"].map({'Cad':0,'Normal':1})
-X1.drop('Cath',1,inplace=True)
-
-\subsection{Splitting into train and test}
-
-from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X1, y, test_size=0.2, random_state=3)
-
-Hypertuning our featureset using grid search to get best possible parameters
-
-from sklearn.model_selection import GridSearchCV
-Depth=[2,3,4,5]
-Trees=[200,500,700]
-tuned_parameters = [{'n_estimators': Trees,'max_depth':Depth}]              
-RFM = RandomForestClassifier()
-clf = GridSearchCV(RFM, tuned_parameters, cv=5,scoring='accuracy')
-clf.fit(X1,y)
-print("Best parameters set found on development set:")
-print()
-print(clf.best_params_)
-
+\includegraphics[width=0.95\columnwidth]{project/images/Untitled4.png}
 
 Best parameters set found on development set:
 
-{'max_depth': 5, 'n_estimators': 200}
-In [22]:scores = [x[1] for x in clf.grid_scores_]
-scores = np.array(scores).reshape(len(Depth), len(Trees))
-for ind, i in enumerate(Depth):
-plt.plot(Trees, scores[ind], label='max_depth: ' + str(i))
-plt.legend()
-plt.xlabel('n_estimators')
-plt.ylabel('Mean score')
-plt.show()
+\includegraphics[width=0.95\columnwidth]{project/images/Untitled5.png}
 `
 
 \includegraphics[width=0.95\columnwidth]{images/output_15_1.png}
 
 This is for plotting our feature importances with their standard deviations:
 
-plt.show()
+\includegraphics[width=0.95\columnwidth]{project/images/Untitled6.png}
 
 \includegraphics[width=0.95\columnwidth]{images/output_17_0.png}
-
 
 
 \subsection{Importance}
@@ -308,15 +234,17 @@ St Depression         & 0.005336 & 0.014798
 \end{tabular}
 \end{table}
 
+\subsection{Model Accuracy}  
 
-Finaly by checking of our model's accuracy on test set
-0.885245901639
+Finally by checking of our model's accuracy on test set 0.885245901639.
 
+\includegraphics[width=0.95\columnwidth]{project/images/Untitled7.png}
+
+The study shows that the ensemble technique it proposes has a higher accuracy rate than the SMO and Naïve methods, while the two techniques have almost the same accuracy's. Furthermore, the HTN, typical chest pain, ST elevation, BP, PR features, T inversion, and DM have an impact on CAD. The research also show that the association rule mining method results in laws with high confidences. The research also shows that the ensemble method is the best among the three because it combines both of the as its features. Unfortunately, the technique comprising both Naïve method and SMO technique makes it easier to fail; this is in case one of them has a problem, the entire system fails.
 
 \subsection{Conclusion}
 
 A period of open data in social insurance is currently under way. We have effectively encountered a time of advance in digitizing therapeutic records, as pharmaceutical organizations and different associations total a long time of innovative work information in electronic databases. The national government and other open partners have additionally quickened the push toward straightforwardness by making many years of put away information usable, accessible, and significant by the medicinal services segment in general. Together, these increments in information liquidity have conveyed the business to the tipping point.
-
 
 \subsection{Acknowlement}
 
