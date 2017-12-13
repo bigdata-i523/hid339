@@ -56,30 +56,37 @@
 
     
 \begin{abstract}
-
-  This paper is about Big Data application in the diagnostic of
-  coronary Artery disease .The paper explore contribution that big
-  data had on the analysis of numerous data by researchers.
-
+Coronary disease is the most common heart disease. Coronary disease is the primary cause of heart attack and death in the world \cite{ali}. Early diagnostic of this illness is, therefore, of great importance. Some techniques have up to this point been conceived for diagnosing coronary. In spite of the significant change in future in recent years, there are difficulties that are putting weight on the managed capacity healthcare system. This exceptional circumstance is offering the right energy to reconsider plans of action on healthcare services frameworks which require another vital approach moving from a volume to an execution based model-value for money \cite{ali}.
+Presently big data does not productively contribute to enhancing healthcare. In an inexorably engaged computerized society, enormous information has now achieved each area in the worldwide economy. Individual information has turned into another type of currency, in any case, this "cash" isn't owing in the therapeutic services division since patients are not in control of their medical health data making impossible to build the trust that is needed.
 \end{abstract}
 
 
-\keywords{i523, hid339, ???}
+\keywords{i523, hid339, Coronary disease, big data, Random Forest}
 
 
-
- \maketitle   
+    \maketitle
     
 \subsection{Introduction}
-Cardiovascular illness is the primary source of dreariness and mortality in the Western world\cite{ali}. Early location of coronary corridor ailment (CAD) is of fundamental significance as favorable treatment may permanently lessen grimness and death. Albeit obtrusive coronary angiography remains the standard of reference for the assessment of CAD, multisector processed tomography coronary angiography (CTA) has as of late developed as a reliable imaging methodology for the non-intrusive evaluation of CAD.
-THE analysis of coronary-supply route infection on the premise of history and physical examination alone is regularly troublesome. Many complex tests have accordingly been produced to permit an early and more precise analysis. Albeit many tests are presently immovably settled in clinical practice, none is especially suited to wide-scale, savvy application,1 in light of the fact that every ha constraints concerning affectability and specificity. Along these lines, when a positive test outcome happens in a patient with a low probability of illness, it is of restricted analytic importance.2 3 4 A "positive" electrocardiographic anxiety test in an asymptomatic patient, for instance, has a prescient precision of just 30 for every penny for the nearness of angiographic coronary-conduit malady.
+
+Data mining is a technique of finding hidden information in a database. Nowadays, several fields use data mining as it has different applications like scientific discoveries, in entrepreneurship, and fraud detention. Data mining calculations work on databases, in which each information archive has several attributes.  One of these attributes is the class label, which discovers the data category. The data mining algorithms people use in problems solving are association rule mining, classification, regression analysis and clustering.
+To classify algorithms, a researcher requires a learning phase on a labeled data set, which makes him/her make a decision on the missing test record class label. In the learning phase, a scientist constructs a classification model to predict the data label class label using its values features. Specialist categorizes heart complications as cardiovascular and cardiomyopathy disorders. The Coronary Artery Disease (CAD) is a major cardiomyopathy complication subgroup which causes disability, serious illness, and even death as the disease affect oxygen and blood supply to the heart muscles. The early symptoms of heart disease comprise pain in the center of the chest or a sense of numbness, and palpitation. Other signs are fainting fits or dizzy spells, and dyspnea on exertion. 	Due to the grave nature of heart failures, it is important to find out its causes. Currently, the major goal of many scientific pursues is making accurate diagnosis of cardiac complications. The researchers collect a great deal of information while examining CAD patients, and by processing the information they reveal how the main features of cardiac disorders relate (e.g. the amount of cholesterol, blood pressure, etc.) and these complications’ occurrence probability.
+
+\section{Background}
+
+ The aiagnoses CAD using HRV features and applies several algorithms like SVM, CPAR, C 4.5 and CMAR to them by expressing the performance in terms of Recall, TP, Precision, and TP \citep{ali}. From the study by Lee et al., the SVM algorithm exhibits an excellent performance. Another research by Srivinivas et al. (2010) archives an accuracy of eighty-four percent by probing into why the clogging of the main heart vessels i.e. the right coronary artery, the left circumflex artery, and the left anterior descending coronary artery.	Kavitha and Ramakrishnan (2010) use the genetic and neutral algorithms to diagnose CAD and were successful in ensuring the technique works. In another study, Wang and Hoy (2005) employ features like blood pressure, sex, smoking, age, high-density lipoprotein cholesterol (HDL), and cholesterol to diagnose CAD. Wang and Hoy (2005) also uses the Framingham function to perform the CAD diagnosis.  Another study by Palaniappan and Awang (2008) draws upon a limited count of the features the paper mentions above regarding three different data mining algorithms, which are the Naïve Bayes, neural network, and decision. The results from their research show an accuracy rate of 85.53 percent. Shantakumar and Kumaraswamy (2009) use thirteen features and neural network algorithm to design a system which predicts heart attack.	Apparently, for all studies reviewers conduct regarding this field, the work of some physical examination and the ECG features in the diagnosis of CAD is not clear.  To address this issue in the current literature, the latest studies investigate the effect of a wide set of physical examination and ECG features while diagnosing CAD. These modern features the analysis includes are the Q wave, dyspnea, T inversion, New York Heart Association’s functional class,  ST elevation, and the ST depression. So far, the scientists have not conducted studies regarding these features’s context. Amongst the entire data mining associations rule, algorithms, and classifications is where the researchers select the mining techniques basing on the aim of the study. The study constructs a dataset from the information it gets from three hundred and three impromptu visitors (two hundred and sixteen patients) to Shaheed Rajaei Cardiovascukar, Medical and Research Center. Then the research uses the dataset to analyze the impacts of different ECG , demographic, and clinical features while diagnosing  CAD. The study utilizes different classification algorithms to evaluate the dataset; these include proposed ensemble, Naïve Bayes, and SMO algorithm. Furthermore, it employs ten-fold cross-validation to assess the accuracy of the evaluations. The research uses the findings of the standard angiographic tool as a basis for comparison to assess the ability to predict the classification algorithms. Below are the aims of the study:
+I.	The analysis of the technique to predict CAD and prevent highly troublesome and invasive procedures like angiography;
+II.	Detection of the features efficiency in the CAD diagnosis;
+III.Anticipation of the CAD incidence by using data mining tools;
+IV.	Innovation of a database on CAD, comprising effective elements and their weights;
+V.	Finding efficient analytical techniques to evaluate the collected dataset; and
+VI.	Analyzing the tool for CAD diagnosis by test and training sets.
+The other part of the research paper’s organization is as follows: Section 3 evaluates the dataset, Section 4 does the introduction of algorithms, and section 6 gives the conclusions and recommendations for future research regarding the topic.
+
 
 
 \section{Dataset}
-For this project  will use Z-Alizadeh Sani aataset for the data analuysis.
+For this project I will use Z-Alizadeh Sani aataset for the data analuysis.
     
-\section{Analytic}
-    I will use Random Forest machine learning for predicting the feature to diagnose coronary artery disease.
 
 \section{Risk factors}
 \par In spite of the fact that an extensive variety of hazard factors for coronary heart dis-ease have been distinguished from populace ponders, these measures, separately or in blend, are inadequately pow-erful to give a solid, noninvasive conclusion of the nearness of coronary illness. Here we demonstrate that pat-tern-acknowledgment systems connected to proton atomic mag-netic reverberation (1H-NMR) spectra of human serum can effectively analyze the nearness, as well as the seriousness, of coronary illness. Utilization of super-vised halfway minimum squares-discriminant examination to orthogo-nal flag amended informational collections permits >90\% of subjects with stenosis of every one of the three noteworthy coronary vessels to be distin-guished from subjects with angiographically ordinary coro-nary supply routes, with a specificity of >90\%. Our examinations appear out of the blue a system fit for giving an accu-rate, noninvasive and fast conclusion of coronary heart dis-facilitate that can be utilized clinically, either in populace screening or to permit compelling focusing of medicines, for example, statins.
@@ -87,53 +94,72 @@ Coronary illness (CHD) is a noteworthy reason for mortality and bleakness in cre
 As of late, be that as it may, there have been specialized advances that have permitted to a great degree high-thickness informational collections to be developed from people. Methods, for example, genomics, proteomics and metabonomics (a frameworks way to deal with ex-amining the adjustments in hundreds or thousands of low-mol-ecular-weight metabolites in an in place tissue or biofluid9) offer the possibility of effectively recognizing people with specific malady or lethal states. Of these methods, NMR-based metabonomics offers a few particular preferences in a clinical setting. To begin with, it can be completed on standard arrangements of serum, plasma or urine10,11, evading the requirement for master arrangements of cell RNA and ace tein required for genomics and proteomics, respectively12– 14. Second, huge numbers of the hazard factors effectively recognized, (for example, levels of different lipids) are little atom metabolites that will add to the metabonomic informational collection.
 
 \section{Analytic}
+I will use Random Forest machine learning for predicting the feature to diagnose coronary artery disease.
 
-Figure \ref{F:readdata} shows ....
+Machine learning is branch of Data Science which consolidates a huge arrangement of measurable strategies. These methods enable data scientists to make a model which can gain from past information and distinguish designs from huge, uproarious and complex informational indexes. Scientists utilize machine learning for disease expectation and guess. Machine learning permits inductions or choices that generally can't be made utilizing regular measurable systems. With a powerfully approved machine learning model, odds of right finding move forward. It uncommonly helps in understanding of results for marginal cases
 
-\begin{figure}[htb]
+Machine learning utilizes features (i.e. factors or properties) to create predictive models. Utilizing an appropriate mix of highlights is fundamental for acquiring high exactness and precision. Since too much (unspecific) features pose the problem of overfitting the model, we generally want to restrict the features in our models to those, that are most relevant for the response variable we want to predict. Using as few features as possible will also reduce the complexity of our models, which means it needs less time and computer power to run and is easier to understand.
 
-\begin{lstlisting}
-In [2]: import matplotlib.pyplot as plt
-    % matplotlib inline
-    from sklearn.metrics import accuracy_score
+\subsection{Package Installation}
 
-In [4]:from sklearn.ensemble import RandomForestClassifier
-        import pandas as pd
-        from sklearn.preprocessing import LabelEncoder
-        import numpy as np
-        df=pd.read_excel('Z-Alizadeh sani dataset.xlsx')
-        df.head()
-\end{lstlisting}
-\caption{Read data}\label{F:readdata}
-\end{figure}
+I installed the following packages in the Python environment, and load the data using panda Dataframe. Data exploration, manipulation, and visualization start with loading data, be it from files or from a URL. Pandas has become the go-to library for all things data analysis in Python.
 
-\begin{lstlisting}
-In [6]:def extract_col(df,col_name):
-        return list(df[col_name])
+import matplotlib.pyplot as plt
 
-        col = extract_col(df,'BMI') 
-        plt.hist(col)
-        plt.show()
-\end{lstlisting}
-\includegraphics[width=0.95\columnwidth]{images/output_2_0.png}
+from sklearn.metrics import accuracy_score
 
-\begin{lstlisting}
-2.1 Taking all categorical features that have only 2 levels and label encoding them to get binary features
+from sklearn.ensemble import RandomForestClassifier
 
-In [2]:cols = df.columns
-        num_cols = df._get_numeric_data().columns
-        cat_cols=list(set(cols) - set(num_cols))
-        ##BBB, VHD have multiple levels rest are binary
-        ###Cath is predictor var
-        cat_cols.remove('VHD')
-        cat_cols.remove('Cath')
-        cat_cols.remove('BBB')
-        cat_cols
-\end{lstlisting}
+import pandas as pd
 
-\begin{lstlisting}
-Out[2]:['DLP',
-    'CRF',
+from sklearn.preprocessing import LabelEncoder
+
+import numpy as np
+
+df=pd.read_excel('Z-Alizadeh sani dataset.xlsx')
+
+I am using the describe() method that will give me basic statistics for every column in the dataset. This method will allow me to Generates descriptive statistics that summarize the central tendency, dispersion and shape of a dataset.
+df.head()
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{llllllllllllllllllllll}
+Age & Weight & Length & Sex & BMI   & DM        & HTN & Current Smoker & EX-Smoker & FH & ... & K   & Na  & WBC & Lymph & Neut & PLT & EF-TTE & Region RWMA & VHD & Cath   &        \\
+0   & 53     & 90     & 175 & Male  & 29.387755 & 0   & 1              & 1         & 0  & 0   & ... & 4.7 & 141 & 5700  & 39   & 52  & 261    & 50          & 0   & N      & Cad    \\
+1   & 67     & 70     & 157 & Fmale & 28.398718 & 0   & 1              & 0         & 0  & 0   & ... & 4.7 & 156 & 7700  & 38   & 55  & 165    & 40          & 4   & N      & Cad    \\
+2   & 54     & 54     & 164 & Male  & 20.077335 & 0   & 0              & 1         & 0  & 0   & ... & 4.7 & 139 & 7400  & 38   & 60  & 230    & 40          & 2   & mild   & Cad    \\
+3   & 66     & 67     & 158 & Fmale & 26.838648 & 0   & 1              & 0         & 0  & 0   & ... & 4.4 & 142 & 13000 & 18   & 72  & 742    & 55          & 0   & Severe & Normal \\
+4   & 50     & 87     & 153 & Fmale & 37.165193 & 0   & 1              & 0         & 0  & 0   & ... & 4.0 & 140 & 9200  & 55   & 39  & 274    & 50          & 0   & Severe & Normal
+\end{tabular}
+\end{table}
+
+For a better visualization of the data, I will generate a histogram with the following code. data visualization facilitate how to interpret and break down big data in a manner that is easily understandable.
+
+\includegraphics[width=0.95\columnwidth]{project/images/output_2_0.png}
+
+\subsection{Taking all categorical features that have only 2 levels and label encoding them to get binary features}
+
+Data preparation for data analysis is a pivotal step to take in any big data analysis. This involve manipulation of data into a form suitable for further analysis and processing. It is a process that involves many different tasks and which cannot be fully automated. Many of the data preparation activities are routine, tedious, and time consuming
+
+cols = df.column
+num_cols = df._get_numeric_data().columns
+
+cat_cols=list(set(cols) - set(num_cols))
+
+cat_cols.remove('VHD')
+
+cat_cols.remove('Cath')
+
+cat_cols.remove('BBB')
+
+cat_cols
+
+This layout The features with High Confidence in Predicting coronary altery disease:
+
+
+['CRF',
     'Obesity',
     'Poor R Progression',
     'Exertional CP',
@@ -151,40 +177,29 @@ Out[2]:['DLP',
     'Atypical',
     'LVH',
     'Systolic Murmur']
-\end{lstlisting}
+\subsection{Fitting our Encoder}
 
-\begin{lstlisting}
-In [3]:### Fitting our Encoder
-In [4]:df[cat_cols]=df[cat_cols].apply(LabelEncoder()
+df[cat_cols]=df[cat_cols].apply(LabelEncoder()
 .fit_transform)
-\end{lstlisting}
 
-\begin{lstlisting}
-One hot encoding our multiple level features: 'VHD' and 'BBB'
-In [5]:from sklearn.feature_extraction import DictVectorizer
-        def encode_onehot(df, cols):
-        vec = DictVectorizer()
-        vec_data = pd.DataFrame(vec.fit_transform(df[cols].to_dict('records')).toarray())
-        vec_data.columns = vec.get_feature_names()
-         vec_data.index = df.index
+One hot encoding our multiple level features: 'VHD' and 'BBB
+'
+from sklearn.feature_extraction import DictVectorizer:
+
+
+def encode_onehot(df, cols):
+vec = DictVectorizer()
+vec_data = pd.DataFrame(vec.fit_transform(df[cols].to_dict('records')).toarray())
+vec_data.columns = vec.get_feature_names()
+vec_data.index = df.index
     
-        df = df.drop(cols, axis=1)
-        df = df.join(vec_data)
-        return df
-        X = encode_onehot(df, cols=['BBB'])
-        X1 =encode_onehot(X, cols=['VHD'])
-        X1.columns
-\end{lstlisting}
-\subsubsection{Taking all categorical features that have only 2 levels
-and label encoding them to get binary
-features}\label{taking-all-categorical-features-that-have-only-2-levels-and-label-encoding-them-to-get-binary-features}
-Numerous variable choice strategies depend on the participation of variable significance for positioning and model estimation to create, assess and think about a group of models. Following Kohavi and John (1997) and Guyon and Elisseff (2003), it is common to recognize three sorts of variable determination techniques: "channel" for which the score of variable significance does not rely upon a given model outline strategy; "wrapper" which incorporate the expectation execution in the score figuring; lastly "implanted" which join all the more firmly factor choice and model estimation \cite{GENUER20102225}.
+df = df.drop(cols, axis=1)
+df = df.join(vec_data)
+return df
+X = encode_onehot(df, cols=['BBB'])
+X1 =encode_onehot(X, cols=['VHD'])
+X1.columns
 
-% \includegraphics[width=0.95\columnwidth]
-
-\begin{lstlisting}
-
-Out[5]: 
 Index(['Age', 'Weight', 'Length', 'Sex', 'BMI', 'DM', 'HTN', 'Current Smoker',
        'EX-Smoker', 'FH', 'Obesity', 'CRF', 'CVA', 'Airway disease',
        'Thyroid Disease', 'CHF', 'DLP', 'BP', 'PR', 'Edema',
@@ -197,170 +212,105 @@ Index(['Age', 'Weight', 'Length', 'Sex', 'BMI', 'DM', 'HTN', 'Current Smoker',
        'Cath', 'BBB=LBBB', 'BBB=N', 'BBB=RBBB', 'VHD=Moderate', 'VHD=N',
        'VHD=Severe', 'VHD=mild'],
         dtype='object')
-\end{lstlisting}
 
-\begin{lstlisting}
+
 Getting our pred variable and removing from orignal df
-In [6]:y=df["Cath"].map({'Cad':0,'Normal':1})
-    X1.drop('Cath',1,inplace=True)
-\end{lstlisting}
-\begin{lstlisting}
-Splitting into train and test
-In [8]:from sklearn.model_selection import train_test_split
-    X_train, X_test, y_train, y_test = train_test_split(X1, y, test_size=0.2, random_state=3)
-\end{lstlisting}
-\begin{lstlisting}
-Hypertuning our featureset using grid search to get best possible params
-In [21]:from sklearn.model_selection import GridSearchCV
-    Depth=[2,3,4,5]
-    Trees=[200,500,700]
-    tuned_parameters = [{'n_estimators': Trees,'max_depth':Depth}]              
-    RFM = RandomForestClassifier()
-    clf = GridSearchCV(RFM, tuned_parameters, cv=5,scoring='accuracy')
-    clf.fit(X1,y)
-    print("Best parameters set found on development set:")
-    print()
-    print(clf.best_params_)
-\end{lstlisting}
-\begin{lstlisting}
+y=df["Cath"].map({'Cad':0,'Normal':1})
+X1.drop('Cath',1,inplace=True)
+
+\subsection{Splitting into train and test}
+
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X1, y, test_size=0.2, random_state=3)
+
+Hypertuning our featureset using grid search to get best possible parameters
+
+from sklearn.model_selection import GridSearchCV
+Depth=[2,3,4,5]
+Trees=[200,500,700]
+tuned_parameters = [{'n_estimators': Trees,'max_depth':Depth}]              
+RFM = RandomForestClassifier()
+clf = GridSearchCV(RFM, tuned_parameters, cv=5,scoring='accuracy')
+clf.fit(X1,y)
+print("Best parameters set found on development set:")
+print()
+print(clf.best_params_)
+
 
 Best parameters set found on development set:
 
 {'max_depth': 5, 'n_estimators': 200}
 In [22]:scores = [x[1] for x in clf.grid_scores_]
-    scores = np.array(scores).reshape(len(Depth), len(Trees))
-    for ind, i in enumerate(Depth):
-    plt.plot(Trees, scores[ind], label='max_depth: ' + str(i))
-    plt.legend()
-    plt.xlabel('n_estimators')
-    plt.ylabel('Mean score')
-    plt.show()
+scores = np.array(scores).reshape(len(Depth), len(Trees))
+for ind, i in enumerate(Depth):
+plt.plot(Trees, scores[ind], label='max_depth: ' + str(i))
+plt.legend()
+plt.xlabel('n_estimators')
+plt.ylabel('Mean score')
+plt.show()
 `
-\end{lstlisting}
+
 \includegraphics[width=0.95\columnwidth]{images/output_15_1.png}
 
-\begin{lstlisting}
+This is for plotting our feature importances with their standard deviations:
 
-This is for plotting our feature importances with their standard deviations
-In [23]:clfs = RandomForestClassifier(n_estimators= clf.best_params_['n_estimators'],
-max_depth=clf.best_params_['max_depth'])
-    clfs.fit(X1, y.ravel())
+plt.show()
 
-    importance = clfs.feature_importances_
-    importance = pd.DataFrame(importance, index=X1.columns, 
-    columns=["Importance"])
-
-    importance["Std"] = np.std([tree.feature_importances_
-    for tree in clfs.estimators_], axis=0)
-
-    x = range(importance.shape[0])
-    y = importance.ix[:, 0]
-    yerr = importance.ix[:, 1]
-
-    plt.bar(x, y, yerr=yerr, align="center")
-
-    plt.show()
-\end{lstlisting}
 \includegraphics[width=0.95\columnwidth]{images/output_17_0.png}
 
-\begin{lstlisting}
-In [24]:importance
-\end{lstlisting}
 
 
-\begin{lstlisting}
-Importance	Std
-\end{lstlisting}
-
+\subsection{Importance}
 
 This table show the importance of each feature in the diagnostic of CAD. Based on the analysis the age, HTN,  DM, BP, Typical chest pain, Non-Anginal  CP, T  inversion, Q  wave,  ST elevation, PR, and ST depression are the features with the highest impact on CAD.
 
 Variable significance is figured restrictively to a given acknowledgment notwithstanding for reproduced datasets. This decision which is criticizable if the goal is to achieve a decent estimation of a basic steady, is predictable with remaining as near as conceivable to the exploratory circumstance managing a given dataset\cite{GENUER20102225}.
 
-\begin{lstlisting}
+\begin{table}[]
+\centering
+\caption{Feature Importance Table}
+\label{my-label}
+\begin{tabular}{lll}
+Importance            & Std      &          \\
+Age                   & 0.086779 & 0.092552 \\
+Weight                & 0.018672 & 0.032956 \\
+Length                & 0.018183 & 0.027928 \\
+Sex                   & 0.003414 & 0.013603 \\
+BMI                   & 0.031609 & 0.042215 \\
+DM                    & 0.015427 & 0.034442 \\
+HTN                   & 0.038735 & 0.059296 \\
+Current Smoker        & 0.005287 & 0.015965 \\
+EX-Smoker             & 0.000587 & 0.004463 \\
+FH                    & 0.002472 & 0.010216 \\
+Obesity               & 0.002333 & 0.008439 \\
+CRF                   & 0.000534 & 0.004805 \\
+CVA                   & 0.000469 & 0.004108 \\
+Airway disease        & 0.000474 & 0.003385 \\
+Thyroid Disease       & 0.001086 & 0.006045 \\
+DLP                   & 0.000407 & 0.004046 \\
+BP                    & 0.003296 & 0.013382 \\
+PR                    & 0.031988 & 0.056958 \\
+Edema                 & 0.014277 & 0.029568 \\
+Weak Peripheral Pulse & 0.001758 & 0.007496 \\
+Lung rales            & 0        & 0        \\
+Systolic Murmur       & 0.001332 & 0.007931 \\
+Diastolic Murmur      & 0.001853 & 0.008916 \\
+Typical Chest Pain    & 0.00495  & 0.020264 \\
+Dyspnea               & 0.161378 & 0.165277 \\
+Function Class        & 0.006237 & 0.01781  \\
+Atypical              & 0.001798 & 0.008412 \\
+Nonanginal            & 0.067681 & 0.098911 \\
+Exertional CP         & 0.032299 & 0.056285 \\
+LowTH Ang             & 0        & 0        \\
+Q Wave                & 0        & 0        \\
+St Elevation          & 0.000976 & 0.005923 \\
+St Depression         & 0.005336 & 0.014798
+\end{tabular}
+\end{table}
 
-Out[24]:
-Age	0.086779	0.092552
-Weight	0.018672	0.032956
-Length	0.018183	0.027928
-Sex	0.003414	0.013603
-BMI	0.031609	0.042215
-DM	0.015427	0.034442
-HTN	0.038735	0.059296
-Current Smoker	0.005287	0.015965
-EX-Smoker	0.000587	0.004463
-FH	0.002472	0.010216
-Obesity	0.002333	0.008439
-CRF	0.000534	0.004805
-CVA	0.000469	0.004108
-Airway disease	0.000474	0.003385
-Thyroid Disease	0.001086	0.006045
-CHF	0.000407	0.004046
-DLP	0.003296	0.013382
-BP	0.031988	0.056958
-PR	0.014277	0.029568
-Edema	0.001758	0.007496
-Weak Peripheral Pulse	0.000000	0.000000
-Lung rales	0.001332	0.007931
-Systolic Murmur	0.001853	0.008916
-Diastolic Murmur	0.004950	0.020264
-Typical Chest Pain	0.161378	0.165277
-Dyspnea	0.006237	0.017810
-Function Class	0.001798	0.008412
-Atypical	0.067681	0.098911
-Nonanginal	0.032299	0.056285
-Exertional CP	0.000000	0.000000
-LowTH Ang	0.000000	0.000000
-Q Wave	0.000976	0.005923
-St Elevation	0.000906	0.004613
-St Depression	0.005336	0.014798
-Tinversion	0.022593	0.042821
-LVH	0.000687	0.004452
-Poor R Progression	0.000546	0.004018
-FBS	0.036382	0.051744
-CR	0.014378	0.027248
-TG	0.040267	0.051599
-LDL	0.011746	0.022602
-HDL	0.015883	0.027084
-BUN	0.015708	0.025022
-ESR	0.023733	0.038713
-HB	0.021479	0.033380
-K	0.023375	0.036937
-Na	0.014249	0.027810
-WBC	0.014354	0.026839
-Lymph	0.018147	0.030376
-Neut	0.022351	0.034163
-PLT	0.021242	0.035043
-EF-TTE	0.049034	0.074234
-Region RWMA	0.044669	0.068886
-BBB=LBBB	0.001229	0.008498
-BBB=N	0.002322	0.008860
-BBB=RBBB	0.000986	0.006953
-VHD=Moderate	0.001554	0.008084
-VHD=N	0.002828	0.011718
-VHD=Severe	0.014135	0.036448
-VHD=mild	0.003587	0.013188
 
-\end{lstlisting}
-
-\begin{lstlisting}
-\large Final checking of our model's accuracy on test set
-In [25]:
-clf = RandomForestClassifier(n_estimators= clf.best_params_['n_estimators'],max_depth=clf.best_params_['max_depth'])
-clf.fit(X_train, y_train)
-y_pred=clf.predict(X_test)
-print(accuracy_score(y_test,y_pred))
-print()
-print()
-print('The accuracy score on test by Random Forest:{}'.format(accuracy_score(y_test,y_pred)))
+Finaly by checking of our model's accuracy on test set
 0.885245901639
-
-
-The accuracy score on test by Random Forest:0.8852459016393442
-\end{lstlisting}
-
-
-
 
 
 \subsection{Conclusion}
@@ -368,11 +318,10 @@ The accuracy score on test by Random Forest:0.8852459016393442
 A period of open data in social insurance is currently under way. We have effectively encountered a time of advance in digitizing therapeutic records, as pharmaceutical organizations and different associations total a long time of innovative work information in electronic databases. The national government and other open partners have additionally quickened the push toward straightforwardness by making many years of put away information usable, accessible, and significant by the medicinal services segment in general. Together, these increments in information liquidity have conveyed the business to the tipping point.
 
 
-
 \subsection{Acknowlement}
 
-I would like to thank Dr. Gregor von Laszewski for his support and
-suggestions to write this paper.
+  I would like to thank Dr. Gregor von Laszewski for his
+  support and suggestions to write this paper.
 
 
 
@@ -382,8 +331,8 @@ suggestions to write this paper.
     
 
 
-% Add a bibliography block to the postdoc
-\bibliographystyle{acm}
-\bibliography{report}
+    % Add a bibliography block to the postdoc
+    \bibliographystyle{acm}
+    \bibliography{report}
     
-\end{document}
+    \end{document}
