@@ -112,7 +112,7 @@ Machine learning utilizes features (i.e. factors or properties) to create predic
 
 I installed the following packages in the Python environment, and load the data using panda Dataframe. Data exploration, manipulation, and visualization start with loading data, be it from files or from a URL. Pandas has become the go-to library for all things data analysis in Python.
 
-\includegraphics[width=0.95\columnwidth]{project/images/Untitled1.png}
+\includegraphics[width=0.95\columnwidth]{images/Untitled1.png}
 
 I am using the describe() method that will give me basic statistics for every column in the dataset. This method will allow me to Generates descriptive statistics that summarize the central tendency, dispersion and shape of a dataset.
 df.head()
@@ -133,13 +133,13 @@ Age & Weight & Length & Sex & BMI   & DM        & HTN & Current Smoker & EX-Smok
 
 For a better visualization of the data, I will generate a histogram with the following code. data visualization facilitate how to interpret and break down big data in a manner that is easily understandable.
 
-\includegraphics[width=0.95\columnwidth]{project/images/output_2_0.png}
+\includegraphics[width=0.95\columnwidth]{images/output_2_0.png}
 
 \subsection{Taking all categorical features that have only 2 levels and label encoding them to get binary features}
 
 Data preparation for data analysis is a pivotal step to take in any big data analysis. This involve manipulation of data into a form suitable for further analysis and processing. It is a process that involves many different tasks and which cannot be fully automated. Many of the data preparation activities are routine, tedious, and time consuming
 
-\includegraphics[width=0.95\columnwidth]{project/images/Untitled3.png}
+\includegraphics[width=0.95\columnwidth]{images/Untitled3.png}
 
 \subsection{Selection of Features}
 
@@ -168,22 +168,22 @@ This layout The features with High Confidence in Predicting coronary altery dise
     'Systolic Murmur']
 \subsection{Fitting our Encoder}
 
-\includegraphics[width=0.95\columnwidth]{project/images/Untitled5.png}
+\includegraphics[width=0.95\columnwidth]{images/Untitled5.png}
 
 \subsection{Splitting into train and test}\
 
-\includegraphics[width=0.95\columnwidth]{project/images/Untitled4.png}
+\includegraphics[width=0.95\columnwidth]{images/Untitled4.png}
 
 Best parameters set found on development set:
 
-\includegraphics[width=0.95\columnwidth]{project/images/Untitled5.png}
+\includegraphics[width=0.95\columnwidth]{images/Untitled5.png}
 `
 
 \includegraphics[width=0.95\columnwidth]{images/output_15_1.png}
 
 This is for plotting our feature importances with their standard deviations:
 
-\includegraphics[width=0.95\columnwidth]{project/images/Untitled6.png}
+\includegraphics[width=0.95\columnwidth]{images/Untitled6.png}
 
 \includegraphics[width=0.95\columnwidth]{images/output_17_0.png}
 
@@ -240,7 +240,7 @@ St Depression         & 0.005336 & 0.014798
 
 Finally by checking of our model's accuracy on test set 0.885245901639.
 
-\includegraphics[width=0.95\columnwidth]{project/images/Untitled7.png}
+\includegraphics[width=0.95\columnwidth]{images/Untitled7.png}
 
 The study shows that the ensemble technique it proposes has a higher accuracy rate than the SMO and Naïve methods, while the two techniques have almost the same accuracy's. Furthermore, the HTN, typical chest pain, ST elevation, BP, PR features, T inversion, and DM have an impact on CAD. The research also show that the association rule mining method results in laws with high confidences. The research also shows that the ensemble method is the best among the three because it combines both of the as its features. Unfortunately, the technique comprising both Naïve method and SMO technique makes it easier to fail; this is in case one of them has a problem, the entire system fails.
 
