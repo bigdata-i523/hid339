@@ -1,123 +1,79 @@
-\RequirePackage[hyphens]{url}
-
 \documentclass[sigconf]{acmart}
 
 \input{format/i523}
 
-\usepackage{listings}
-\usepackage{color}
-% \usepackage[parfill]{parskip}
-
-\definecolor{dkgreen}{rgb}{0,0.6,0}
-\definecolor{gray}{rgb}{0.5,0.5,0.5}
-\definecolor{mauve}{rgb}{0.58,0,0.82}
-
-\lstset{frame=tb,
-  language=Python,
-  aboveskip=3mm,
-  belowskip=3mm,
-  showstringspaces=false,
-  columns=flexible,
-  basicstyle={\small\ttfamily},
-  numbers=none,
-  numberstyle=\tiny\color{gray},
-  keywordstyle=\color{blue},
-  commentstyle=\color{dkgreen},
-  stringstyle=\color{mauve},
-  breaklines=true, 
-  breakatwhitespace=true
-  tabsize=3
-}
-
-\def\bZ{\mathbb{Z}}
-\def\bN{\mathbb{N}}
-\def\bR{\mathbb{R}}
-\def\bC{\mathbb{C}}
-\def\bQ{\mathbb{Q}}
-
-\usepackage{indentfirst}
- 
 \begin{document}
+
 \title{Diagnosis of Coronary Artery Disease Using Big Data Analysis}
-
-
 \author{Hady Sylla}
-\affiliation{%
-  \institution{Indiana University Bloomington}
-  \city{Bloomington} 
-  \state{Indiana} 
-  \postcode{47401}
+\orcid{HID339}
+    \affiliation{%
+    \institution{Indiana University}
+    \streetaddress{711 N Park Ave}
+    \city{Bloomington} 
+    \state{Indiana} 
+    \postcode{47408}
 }
 \email{hsylla@iu.edu}
 
 
 
-% The default list of authors is too long for headers}
-\renewcommand{\shortauthors}{H. Sylla}
-
-
-    
 \begin{abstract}
-Coronary disease is the most common heart disease. Coronary disease is the primary cause of heart attack and death in the world \cite{ali}. Early diagnostic of this illness is, therefore, of great importance. Some techniques have up to this point been conceived for diagnosing coronary. In spite of the significant change in future in recent years, there are difficulties that are putting weight on the managed capacity healthcare system. This exceptional circumstance is offering the right energy to reconsider plans of action on healthcare services frameworks which require another vital approach moving from a volume to an execution based model-value for money \cite{ali}.
-Presently big data does not productively contribute to enhancing healthcare. In an inexorably engaged computerized society, enormous information has now achieved each area in the worldwide economy. Individual information has turned into another type of currency, in any case, this "cash" isn't owing in the therapeutic services division since patients are not in control of their medical health data making impossible to build the trust that is needed.
-\end{abstract}
+The Coronary artery disease (CAD) is the most prevalent heart complication. It is among the primary causes of worldwide heart failures and mortality \cite{ali}. Therefore, early diagnosis of this complication is essential. Specialists have invented different techniques for diagnosing CAD. They conduct most of these methods using the Irvine dataset (University of California), which have limitations of features and missing values thus unreliable. The study on the big data technique is seeking a latest set, with no missing values, consisting features like the Q wave, ST depression, functional class, T inversion, and dyspnea. The research compiled the data from the Shaheed Rajaei Cardiovascular, Medical and Research Center, between 2011 and 2012. The dataset include three features; Naïve Bayes, three hundred and three patients and SMO, and a proposed ensemble algorithm. The study uses the features to conduct the analyses. The researchers use the tenfold cross-validation to calculate accurate algorithms on the dataset by using the ensemble algorithm they present, and were eighty-eight point five accurate. Finally, the study extracts relevant features and rules regarding CAD, which previous studies did not discuss.
 
+\end{abstract}
 
 \keywords{i523, hid339, Coronary disease, big data, Random Forest}
 
+\maketitle
 
-    \maketitle
-    
-\subsection{Introduction}
+\section{Introduction}
+The CAD comes about when atherosclerotic plaques develop in the coronary arteries giving rise to the narrowing of coronary luminal, and sometimes, occlusion, which leads to heart failure or a sudden cardiac failure. In western nations, CAD is among the killer diseases. It is important for people to understand the CAD"s pathophysiology, how to control its development, identifying and effective innovation of the cardiovascular risk elements, and how to diagnose and treat it in early stages, and its reversible stages. The experts consider big data mining technique as "gold standard" for diagnosing CAD, and it is common in use. However, big data mining is an expensive and invasion procedure that requires a high-level of technological experience and latest technology thus the medical experts cannot use it to screen many patients or treat them.  Due to this, many health facilities utilize other noninvasive tools to diagnose CAD. The most popular of these methods are stress echocardiography (ECHO), electrocardiogram (ECG), and scintigraphy or SPECT. Additionally, the clinical setups currently use the coronary magnetic resonance angiography (CMRA) MSCT or EBCT. The objective of this study is showing how using big data mining technique to diagnose the Coronary Artery Disease is the best way to control heart attacks and deaths. The review discusses the features in the big data mining tool, how they derive the results, and discussion of the results. Additionally, the paper gives way to future studies and offers recommendations to improve the CAD complication field. 
+\par Data mining is a technique of finding hidden information in a database. Nowadays, several fields use data mining as it has different applications like scientific discoveries, in entrepreneurship, and fraud detention. Data mining calculations work on databases, in which each information archive has several attributes.  One of these qualities is the class label, which discovers the data category. The data mining algorithms people use in problems solving are association rule mining, classification, regression analysis and clustering.
+To classify algorithms, a researcher requires a learning phase on a labelled data set, which makes him/her decide on the missing test record class label. In the learning phase, a scientist constructs a classification model to predict the data label class label using its values features. Specialist categorises heart complications as cardiovascular and cardiomyopathy disorders. The Coronary Artery Disease (CAD) is a major cardiomyopathy complication subgroup which causes disability, serious illness, and even death as the disease affect oxygen and blood supply to the heart muscles. The early symptoms of heart disease comprise pain in the centre of the chest or a sense of numbness, and palpitation. Other signs are fainting fits or dizzy spells, and dyspnea on exertion. 
+Due to the important nature of heart failures, it is essential to find out its causes. Currently, the primary goal of many scientific pursue is making an accurate diagnosis of cardiac complications. The researchers collect a great deal of information while examining CAD patients, and by processing the data, they reveal how the main features of cardiac disorders relate (e.g. the amount of cholesterol, blood pressure, etc.) and these complications' occurrence probability. The next chapter discusses several research articles that discuss this topic and relate it to what this study's findings.
 
-The Coronary artery disease (CAD) comes about when atherosclerotic plaques develops in the coronary arteries giving rise to the narrowing of coronary luminal, and sometimes, occlusion, which leads to heart failure or a sudden cardiac failure. In western nations, CAD is among the killer  diseases. It is important for people understand the CAD”s pathophysiology, how to control its development, identifying and effective innovation of the cardiovascular risk elements, and how to diagnose and treat it in early stages, and its reversible stages. The experts consider big data mining technique as “gold standard” for diagnosing CAD and it is common in use. However, big data mining is an expensive and invasion procedure that requires a high-level of technological experience and latest technology thus the medical experts cannot use it to screen many patients or treat them.  Due to this, many health facilities utilizes other noninvasive tools to diagnose CAD. The most popular of these methods are stress echocardiography (ECHO), electrocardiogram (ECG), and scintigraphy or SPECT. Additionally, the clinical set ups currently use the coronary magnetic resonance angiography (CMRA) MSCT or EBCT. The objective of this study is showing how using big data mining technique to diagnose the Coronary Artery Disease is the best way to control heart attacks and deaths. The study discusses the features in the big data mining tool, how they derive the results, and discussion of the results. Additionally, the research gives way to future studies and offers recommendations to improve the CAD complication field. 
-Data mining is a technique of finding hidden information in a database. Nowadays, several fields use data mining as it has different applications like scientific discoveries, in entrepreneurship, and fraud detention. Data mining calculations work on databases, in which each information archive has several attributes.  One of these attributes is the class label, which discovers the data category. The data mining algorithms people use in problems solving are association rule mining, classification, regression analysis and clustering.
-To classify algorithms, a researcher requires a learning phase on a labeled data set, which makes him/her make a decision on the missing test record class label. In the learning phase, a scientist constructs a classification model to predict the data label class label using its values features. Specialist categorizes heart complications as cardiovascular and cardiomyopathy disorders. The Coronary Artery Disease (CAD) is a major cardiomyopathy complication subgroup which causes disability, serious illness, and even death as the disease affect oxygen and blood supply to the heart muscles. The early symptoms of heart disease comprise pain in the center of the chest or a sense of numbness, and palpitation. Other signs are fainting fits or dizzy spells, and dyspnea on exertion. 
-Due to the grave nature of heart failures, it is important to find out its causes. Currently, the major goal of many scientific pursues is making accurate diagnosis of cardiac complications. The researchers collect a great deal of information while examining CAD patients, and by processing the information they reveal how the main features of cardiac disorders relate (e.g. the amount of cholesterol, blood pressure, etc.) and these complications’ occurrence probability. The next chapter discusses several research articles that discuss this topic and relate it to what this study’s findings.
+\section{Discussion}
+In this section, the paper provides selected examples of the potential of big data arising from the variety, volume and value of the data people realize. Additionally, it shows how big data are contributing to scientific advance in cardiovascular medicine from discovery of underlying disease mechanisms, disease taxonomy, of treatment relevant sub-types of disease which underpin drug development, and precision medicine.
 
+\section{Contribution of Big Data to Coronary Artery Disease}
 
-\section{Background}
+\subsection{Discovery in genetic and big data}
+Lee, Noh and Ryu \cite{lee2011ire1} discuss that it is challenging to provide deep mechanistic insight in large-scale big data mining resources given the limited availability of genetic information in sufficient depth. Bespoke, recallable investigator-led studies such as East London Genes & Health (ELGH) and the NIHR BioResource enable the coupling of big data mining with extreme genotypes and facilitate their in depth study using bespoke experimental protocols. Complete gene knockouts inform people about gene process. With the latest survey of three thousand, two hundred and twenty-two  British Pakistani heritage exome sequenced persons with parental relatedness that is high, discover one thousand, one hundred and eleven rare-variant homozygous most likely function loss (rhLOF) genotypes predict to disrupt (knockout) seven hundred and eighty-one genes \cite{wang2005framingham}.
+\par Srinnivas \cite{srinivas2010analysis}, Rajkumar \cite{rajkumar2010diagnosis} stated that linking big data to the rhLOF genotypes do not associate with a doctor or prescription consultation rate, and no illness-related phenotypes in thirty-three of forty-two individuals with rhLOF genotypes in Mendelian recessive complexity genes. Phasing the genome sequencing of a healthy PRDM9 knockout woman, her controls and baby, show meiotic recombination sites localised from the hotspots with PRDM9 dependent, depicting PRDM9 redundancy in human beings. Genomic approaches to validating case definitions: across 1000 s of hospital ICD codes, reproduce associations from genome-wide association studies obtained one phenotype at a time.
 
- The study by  \cite{ali} daiagnoses of coronary altery disease using HRV features and applies several algorithms like SVM, CPAR, C 4.5 and CMAR to them by expressing the performance in terms of Recall, TP, Precision, and TP \citep{ali}. From the study by Lee et al., the SVM algorithm exhibits an excellent performance. Another research by Srivinivas et al. (2010) archives an accuracy of eighty-four percent by probing into why the clogging of the main heart vessels i.e. the right coronary artery, the left circumflex artery, and the left anterior descending coronary artery.	Kavitha and Ramakrishnan (2010) use the genetic and neutral algorithms to diagnose CAD and were successful in ensuring the technique works. In another study, Wang and Hoy (2005) employ features like blood pressure, sex, smoking, age, high-density lipoprotein cholesterol (HDL), and cholesterol to diagnose CAD. Wang and Hoy (2005) also uses the Framingham function to perform the CAD diagnosis.  Another study by Palaniappan and Awang (2008) draws upon a limited count of the features the paper mentions above regarding three different data mining algorithms, which are the Naïve Bayes, neural network, and decision. The results from their research show an accuracy rate of 85.53 percent. Shantakumar and Kumaraswamy (2009) use thirteen features and neural network algorithm to design a system which predicts heart attack.	Apparently, for all studies reviewers conduct regarding this field, the work of some physical examination and the ECG features in the diagnosis of CAD is not clear.  To address this issue in the current literature, the latest studies investigate the effect of a wide set of physical examination and ECG features while diagnosing CAD. These modern features the analysis includes are the Q wave, dyspnea, T inversion, New York Heart Association’s functional class,  ST elevation, and the ST depression. So far, the scientists have not conducted studies regarding these features’s context. Amongst the entire data mining associations rule, algorithms, and classifications is where the researchers select the mining techniques basing on the aim of the study. The study constructs a dataset from the information it gets from three hundred and three impromptu visitors (two hundred and sixteen patients) to Shaheed Rajaei Cardiovascukar, Medical and Research Center. Then the research uses the dataset to analyze the impacts of different ECG , demographic, and clinical features while diagnosing  CAD. The study utilizes different classification algorithms to evaluate the dataset; these include proposed ensemble, Naïve Bayes, and SMO algorithm. Furthermore, it employs ten-fold cross-validation to assess the accuracy of the evaluations. The research uses the findings of the standard angiographic tool as a basis for comparison to assess the ability to predict the classification algorithms. Below are the aims of the study:
-I.	The analysis of the technique to predict CAD and prevent highly troublesome and invasive procedures like angiography;
-II.	Detection of the features efficiency in the CAD diagnosis;
-III.Anticipation of the CAD incidence by using data mining tools;
-IV.	Innovation of a database on CAD, comprising effective elements and their weights;
-V.	Finding efficient analytical techniques to evaluate the collected dataset; and
-VI.	Analyzing the tool for CAD diagnosis by test and training sets.
-The other part of the research paper’s organization is as follows: Section 3 evaluates the dataset, Section 4 does the introduction of algorithms, and section 6 gives the conclusions and recommendations for future research regarding the topic.
+\subsection{Discovery in larger scale epidemiology}
+Big health record data can contribute to the discovery of new associations, which would be hard to generate from traditional consented cohorts without record linkage.  This is resolution across a range of risk factor levels and a range of different initial presentations of cardiovascular disease. The discovery of various associations in a cohort of >1m adults initially free from diagnosed cardiovascular disease using national structured linked electronic health records from the CALIBER resource, in which EHR phenotyping algorithms are created, validated and shared using a robust methodology \cite{wang2005framingham}.
+Sideman \cite{sideman1985simulation}argued that the primary precision medicine necessity is estimating the present patient's state. The experts mainly analze complication temporal and correlations illness trajectories with focus on few complications or by use of large-scale techniques without time consideration. Researchers perform a discovery-driven study on temporal illness progression patterns using data from an electronic health registry covering the entire Denmark population. Using the whole illness spectrum, they create 14.9 years of record data on six million, two hundred thousand patients into one thousand one hundred and seventy-one critical trajectories.The experts identify the primary diagnoses like chronic obstructive pulmonary disease and gout obstructive pulmonary disease as the cause of the CAD progression across many of these paths thus it is more significance to diagnose earlier. Such data-driven approach analysis is useful for preventing and predicting future complexities of individual patients \cite{sideman1985simulation}.
 
-\section{Dataset}
-For this project I will use Z-Alizadeh Sani aataset for the data analuysis.
-The dataset elements comprise of ECG features, demographics, and symptoms and physical examinations. 
-The class attribute is Cath which the angiography determines. If the diameter narrowing is bigger than or equivalent to fifty percent, the class value is CAD, Normal otherwise. In the features the study analyses above, “DM” means the history of diabetes mellitus, “HTN” is the history of hypertension, and “Ex-smoker” refers to candidates with a past smoking character. Additionally, “FH” is an individual’s heart disease history in the first-degree relatives, and “Current Smoker” means someone who smokes. Moreover, the study uses the discretizationranges it offers in the Braunwald’s Heart Disease book for enriching the dataset.
+\subsection{Discovery with deep phenotypic data}
+Most cardiovascular diseases (including acute myocardial infarction) have syndromic descriptions and labels, which may span multiple underlying pathological disease processes. One approach to discovering mechanistically relevant disease types is to phenomenal disease \cite{sahaf2011comparing}. For example, in heart failure with preserved ejection fraction machine learning in 46 continuous clinical, laboratory, electrocardiographic, and echocardiographic findings define mutually exclusive groups, which relate to subsequent outcomes. The cardiac atlas project (of healthy and diseased hearts) is an example of large-scale collaborations on feature extraction in imaging using data sharing in standard formats Digital Imaging and Communications in Medicine (DICOM) of the pixel and non-pixel data. Personalization using physiological simulations71 for example for cardiac resynchronisation the study propose therapy. Unstructured free-text data in big data mining adds a further resolution for estimation of disease co-occurrence and stratification of a patient stratification, which people map to the biology frameworks of systems \cite{sahaf2011comparing}.
 
-\subsection{Methodology}
+\subsection{Discovery with deep phenotypic data}
+Most cardiovascular diseases (including acute myocardial infarction) have syndromic descriptions and labels, which may span multiple underlying pathological disease processes. One approach to discovering mechanistically relevant disease types is to phenomap disease \cite{rajkumar2010diagnosis}. For example, in heart failure with preserved ejection fraction machine learning on 46 continuous clinical, laboratory, electrocardiographic, and echocardiographic findings define mutually exclusive groups, which relate to subsequent outcomes. The cardiac atlas project (of normal and diseased hearts) is an example of large scale collaborations on feature extraction in imaging using data sharing in standard formats Digital Imaging and Communications in Medicine (DICOM) of pixel and non-pixel data. Personalization using physiological simulations for example for cardiac resynchronization therapy is proposed. Unstructured free-text data in big data mining adds further resolution for estimation of disease co-occurrence and stratification of a patient stratification, which people map to the biology frameworks of systems \cite{rajkumar2010diagnosis}
 
-The study employs three classification algorithms to evaluate the dataset. In this part, the paper describes the data mining algorithms I uses to analyze the dataset.
+\subsection{Discovering and validating drug targets}
+Regarding a discussion by \cite{rajkumar2010diagnosis}, big data-DNA resources may play an increasingly important role in drug discovery, genomic drug target validation, and marker validation and drug repurposing. For example, demonstrates the strategy that human mutations that inactivate a gene encoding a drug target can mimic the action of an inhibitory drug, here ezetimibe, and thus can be used to infer potential effects of that drug \cite{rajkumar2010diagnosis}.  Ezetimibe is known to affect the marker (LDL cholesterol) but, until recently, not the disease (myocardial infarction). 
+Among the most significant sources of cases of MI and controls in this study was a DNA resource integrated into a health system with rich big data.The discovery of PCSK9 as a drug target to lower cholesterol,79 which the EHR-DNA resources make in principle, illustrates the importance of rare variants in the identification of pathways relevant to the whole population. Mendelian randomisation studies are essential in evaluating whether markers such as heart rate and HDL cholesterol are causal for the disease of interest. Such genetic studies have questioned the role of heart rate and HDL cholesterol82 in the aetiology of heart attack \citep{palaniappan2008intelligent}.
 
-\section{Risk factors}
-\par In spite of the fact that an extensive variety of hazard factors for coronary heart dis-ease have been distinguished from populace ponders, these measures, separately or in blend, are inadequately pow-erful to give a solid, noninvasive conclusion of the nearness of coronary illness. Here we demonstrate that pat-tern-acknowledgment systems connected to proton atomic mag-netic reverberation (1H-NMR) spectra of human serum can effectively analyze the nearness, as well as the seriousness, of coronary illness. Utilization of super-vised halfway minimum squares-discriminant examination to orthogo-nal flag amended informational collections permits >90\% of subjects with stenosis of every one of the three noteworthy coronary vessels to be distin-guished from subjects with angiographically ordinary coro-nary supply routes, with a specificity of >90\%. Our examinations appear out of the blue a system fit for giving an accu-rate, noninvasive and fast conclusion of coronary heart dis-facilitate that can be utilized clinically, either in populace screening or to permit compelling focusing of medicines, for example, statins.
-Coronary illness (CHD) is a noteworthy reason for mortality and bleakness in created nations, influencing upwards of one of every three people previously the age of 70 years1. In the course of recent decades a scope of ecological and biochemi-cal chance elements for the advancement of CHD have been iden-tified in cross-sectional studies2. For instance, tobacco smoking is related with a roughly two-overlap in-wrinkled danger of CHD3. Additionally, abnormal amounts of cholesterol in substantial, triglyceride-rich lipoprotein particles (mostly low-thickness lipoprotein (VLDL) and low-thickness lipoprotein (LDL)) and lower levels of cholesterol in high-thickness lipoprotein (HDL) particles are known to be related with expanded danger of CHD4.
-As of late, be that as it may, there have been specialized advances that have permitted to a great degree high-thickness informational collections to be developed from people. Methods, for example, genomics, proteomics and metabonomics (a frameworks way to deal with ex-amining the adjustments in hundreds or thousands of low-mol-ecular-weight metabolites in an in place tissue or biofluid9) offer the possibility of effectively recognizing people with specific malady or lethal states. Of these methods, NMR-based metabonomics offers a few particular preferences in a clinical setting. To begin with, it can be completed on standard arrangements of serum, plasma or urine10,11, evading the requirement for master arrangements of cell RNA and ace tein required for genomics and proteomics, respectively12– 14. Second, huge numbers of the hazard factors effectively recognized, (for example, levels of different lipids) are little atom metabolites that will add to the metabonomic informational collection.
+\subsection{Cost effectiveness of innovation}
+The Institute of Medicine (U.S.), Institute of Medicine (U.S.), and Institute of Medicine (U.S.) (2011) shows that big data provide new opportunities in understanding the cost-effectiveness of existing and new interventions. Because of the ability to assess baseline risks in unselected general populations (commonly higher risk than those reported in trials), such ‘real world evidence' is increasingly required by payers and the regulators. As more data sources are linked, greater granularity of the care data (e.g. 67 different types of primary care ‘consultation') may provide more accurate and more complete resource use data. For example, cost-effectiveness decision models can be developed before trials report to estimate the willingness to pay and pricing of a drug according to different trial benefits (relative risk reductions) applied to patients at various strata of risk \cite{muenke2015congenital}.
 
-\section{Analytic}
-I will use Random Forest machine learning for predicting the feature to diagnose coronary artery disease.
+\subsection{Public health}
+Agrawal \cite{agrawal1993mining} assert that there are significant gaps in our ability to prevent the onset of and prolong life in, many of the most common cardiovascular diseases in the 21st century including a trial fibrillation, heart failure, peripheral arterial disease. There are also gaps in our ability to measure disease and model the impact of interventions in populations. Clinicians diagnose more specific entities than ‘heart attack', ‘CHD' or ‘CVD' yet conventional consented cohorts have lacked the statistical size or the phenotypic resolution to measure clinically relevant sub-types of disease \cite{chu2009bayesian}. Big data can study the conditions that clinicians diagnose to provide scalable, population-based, updatable measurements of new disease burden vital for the evaluation of alternative strategies of prevention. For example, significant data can be used to estimate the incidence and survival of the treatment-relevant sub-types of MI (ST elevation and non-ST elevation) \cite{dietterich2000ensemble}.
 
-Machine learning is branch of Data Science which consolidates a huge arrangement of measurable strategies. These methods enable data scientists to make a model which can gain from past information and distinguish designs from huge, uproarious and complex informational indexes. Scientists utilize machine learning for disease expectation and guess. Machine learning permits inductions or choices that generally can't be made utilizing regular measurable systems. With a powerfully approved machine learning model, odds of right finding move forward. It uncommonly helps in understanding of results for marginal cases
+\section{Analysis}
+To characterize algorithms, a researcher requires a learning stage on a labelled dataset collection, which makes him/her settle on the missing test record class \cite{ali}. In the learning stage, a researcher builds an order model model to predict the data label class label using its values features. Specialist categorises heart complications as cardiovascular and cardiomyopathy disorders \cite{ali}. The Coronary Artery Disease (CAD) is a noteworthy cardiomyopathy inconvenience subgroup which causes inability, genuine sickness, and even death as the disease affect oxygen and blood supply to the heart muscles. The early indications of coronary illness involve torment in the focal point of the chest or a feeling of deadness, and palpitation. Different signs are blacking out fits or mixed up spells, and dyspnea on effort.
+\par  Due to the vital idea of heart failure, the primary goal of many scientific pursue is making an accurate diagnosis of cardiac complications. The analysts gather a lot of data while looking at CAD patients, and by preparing the information, they uncover how the main features highlights of cardiovascular issue relate (e.g. the measure of cholesterol, circulatory strain, and so on.) and these complexities' event likelihood.
 
-Machine learning utilizes features (i.e. factors or properties) to create predictive models. Utilizing an appropriate mix of highlights is fundamental for acquiring high exactness and precision. Since too much (unspecific) features pose the problem of overfitting the model, we generally want to restrict the features in our models to those, that are most relevant for the response variable we want to predict. Using as few features as possible will also reduce the complexity of our models, which means it needs less time and computer power to run and is easier to understand.
+\subsection{Dataset}
+A dataset, constructed from the information collected from 303  random  visitors  (216  patients)  to  Shaheed Rajaei Cardiovascular,  Medical  and  Research  Center, was used to evaluate the effects of different demographic, clinical, and ECG features on the diagnosis of Coronary artery disease.This dataset is publicly available and does not contain any patient identifier.Demographics such as age and sex are also included in the dataset.
 
-\subsection{Package Installation}
-
-I installed the following packages in the Python environment, and load the data using panda Dataframe. Data exploration, manipulation, and visualization start with loading data, be it from files or from a URL. Pandas has become the go-to library for all things data analysis in Python.
-
-\includegraphics[width=0.95\columnwidth]{images/Untitled1.png}
-
+\subsection{Method}
+I will use Random Forest machine learning for predicting the feature to diagnose coronary artery disease Random forests (RF) is a prominent tree-based ensemble machine learning tool that is exceptionally data adaptive \cite{breiman2001random}.I will primarily be using the SciPy stack, especially pandas, matplotlib, seaborn and sklearn.
 I am using the describe() method that will give me basic statistics for every column in the dataset. This method will allow me to Generates descriptive statistics that summarize the central tendency, dispersion and shape of a dataset.
-df.head()
 
-\begin{table}[]
+\begin{table}
 \centering
 \caption{Dastaset Description}
 \label{my-label}
@@ -131,73 +87,60 @@ Age & Weight & Length & Sex & BMI   & DM        & HTN & Current Smoker & EX-Smok
 \end{tabular}
 \end{table}
 
-For a better visualization of the data, I will generate a histogram with the following code. data visualization facilitate how to interpret and break down big data in a manner that is easily understandable.
-
-\includegraphics[width=0.95\columnwidth]{images/output_2_0.png}
-
-\subsection{Taking all categorical features that have only 2 levels and label encoding them to get binary features}
-
-Data preparation for data analysis is a pivotal step to take in any big data analysis. This involve manipulation of data into a form suitable for further analysis and processing. It is a process that involves many different tasks and which cannot be fully automated. Many of the data preparation activities are routine, tedious, and time consuming
-
-\includegraphics[width=0.95\columnwidth]{images/Untitled3.png}
-
-\subsection{Selection of Features}
-
-While selecting the element, the study considers the data gain measurement. Among the features, the research selects sixteen with the highest information gain and starts applying algorithms to them. Data gain shows how an element can divide several classes. For instance, is a feature separates the two classes completely; it has the highest information gain.
-
-This layout The features with High Confidence in Predicting coronary altery disease:
 
 
-['CRF',
-    'Obesity',
-    'Poor R Progression',
-    'Exertional CP',
-    'Airway disease',
-    'LowTH Ang',
-    'Sex',
-    'Nonanginal',
-    'Diastolic Murmur',
-    'Dyspnea',
-    'Thyroid Disease',
-   'Lung rales',
-    'CVA',
-    'CHF',
-    'Weak Peripheral Pulse',
-    'Atypical',
-    'LVH',
-    'Systolic Murmur']
-\subsection{Fitting our Encoder}
-
-\includegraphics[width=0.95\columnwidth]{images/Untitled5.png}
-
-\subsection{Splitting into train and test}\
-
-\includegraphics[width=0.95\columnwidth]{images/Untitled4.png}
-
-Best parameters set found on development set:
-
-\includegraphics[width=0.95\columnwidth]{images/Untitled5.png}
-`
-
-\includegraphics[width=0.95\columnwidth]{images/output_15_1.png}
-
-This is for plotting our feature importances with their standard deviations:
-
-\includegraphics[width=0.95\columnwidth]{images/Untitled6.png}
-
-\includegraphics[width=0.95\columnwidth]{images/output_17_0.png}
+For a better visualization of the data, I will generate a histogram. data visualization facilitate how to interpret and break down big data in a manner that is easily understandable.
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\columnwidth]{project/images/output_2_0.png}
+    \caption{Bar Plot}
+    \label{Plot}
+\end{figure}
 
 
-\subsection{Importance}
 
-This table show the importance of each feature in the diagnostic of CAD. Based on the analysis the age, HTN,  DM, BP, Typical chest pain, Non-Anginal  CP, T  inversion, Q  wave,  ST elevation, PR, and ST depression are the features with the highest impact on CAD.
+\subsection{Data Preparation}
+Since this dataset include string data, I will use encoding to transforms categorical features to a format that works better with classification by taking all categorical features that have only 2 levels and label encoding them to get binary features. 
 
-Variable significance is figured restrictively to a given acknowledgment notwithstanding for reproduced datasets. This decision which is criticizable if the goal is to achieve a decent estimation of a basic steady, is predictable with remaining as near as conceivable to the exploratory circumstance managing a given dataset\cite{GENUER20102225}.
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\columnwidth]{project/images/Untitled3.png}
+    \caption{Encoding}
+    \label{Encoding}
+\end{figure}
 
-\begin{table}[]
+Then I will apply one hot encoding our multiple level features that will allows the representation of categorical data to be more expressive.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\columnwidth]{project/images/Encoding.png}
+    \caption{Hot Encoding}
+    \label{Hot Enco}
+\end{figure}
+    
+\subsection{Measure of Variable importance Ranking}
+An essential element of RF is that it gives a quickly calculable inner measure of variable significance (VIMP) that can be utilized to rank factors. This element is particularly valuable for high-dimensional genomic information.In spite of the fact that there are numerous fruitful applications utilizing change significance, a feedback is that it is a ranked based approach. Ranking is significantly more troublesome than the variable determination issue, which just tries to choose a gathering of factors that when consolidated are prescient, without forcing a positioning structure. In any case, in view of the many-sided quality in organic frameworks, positioned quality records in light of RF or RSF which consider relationship and communication impacts are as yet an immense change from univariate positioned quality records in light of t-test's or Cox corresponding peril demonstrating utilizing one variable at any given moment. Be that as it may, alert is required when deciphering any straight positioning since it is as a rule likely that various arrangements of feebly prescient highlights are mutually prescient. This seems, by all accounts, to be an uncertain issue of positioning and further investigations are required.
+I will specify which dataset and variable I want to predict respectively.I like to keep a parameter file where I specify data sources and such. This lets me create generic analytics code that is easy to reuse.
+After I have specified what dataset I want to study, I split the training and test datasets. Then I will scale the data, which makes most classifiers run better.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\columnwidth]{project/images/output_15_1.png}
+    \caption{Scores Attribute}
+    \label{Score}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\columnwidth]{project/images/output_17_0.png}
+    \caption{feature importance with their standard deviations}
+    \label{Featites Format}
+\end{figure}
+
+\begin{table}
 \centering
 \caption{Feature Importance Table}
-\label{my-label}
+\label{Importance}
 \begin{tabular}{lll}
 Importance            & Std      &          \\
 Age                   & 0.086779 & 0.092552 \\
@@ -235,34 +178,40 @@ St Elevation          & 0.000976 & 0.005923 \\
 St Depression         & 0.005336 & 0.014798
 \end{tabular}
 \end{table}
-
-\subsection{Model Accuracy}  
-
-Finally by checking of our model's accuracy on test set 0.885245901639.
-
-\includegraphics[width=0.95\columnwidth]{images/Untitled7.png}
-
-The study shows that the ensemble technique it proposes has a higher accuracy rate than the SMO and Naïve methods, while the two techniques have almost the same accuracy's. Furthermore, the HTN, typical chest pain, ST elevation, BP, PR features, T inversion, and DM have an impact on CAD. The research also show that the association rule mining method results in laws with high confidences. The research also shows that the ensemble method is the best among the three because it combines both of the as its features. Unfortunately, the technique comprising both Naïve method and SMO technique makes it easier to fail; this is in case one of them has a problem, the entire system fails.
-
-\subsection{Conclusion}
-
-A period of open data in social insurance is currently under way. We have effectively encountered a time of advance in digitizing therapeutic records, as pharmaceutical organizations and different associations total a long time of innovative work information in electronic databases. The national government and other open partners have additionally quickened the push toward straightforwardness by making many years of put away information usable, accessible, and significant by the medicinal services segment in general. Together, these increments in information liquidity have conveyed the business to the tipping point.
-
-\subsection{Acknowlement}
-
-  I would like to thank Dr. Gregor von Laszewski for his
-  support and suggestions to write this paper.
+Finally by checking the model's accuracy on test set as shown on figure below, the accuracy score on test by Random Forest:0.8852.
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\columnwidth]{project/images/Untitled7.png}
+    \caption{Accuracy Test}
+    \label{Accuracy}
+\end{figure}
 
 
 
 
-    
-    
-    
+
+\section{Conclusion}
+The research uses a new dataset comprising thirty-eight features together with the data mining methods to get useful results about this area of research. Afterwards, the study chooses sixteen features using an element selection algorithm and some common classification algorithms, and it applies the ensemble algorithm it proposes on the dataset. The research obtains the highest accuracy (88.51%) when both the element selection and it uses the ensemble algorithm. Additionally, the study utilises the association rule mining methods to extract from the dataset the high confidential rules. The CAD complication is among the primary causes of deaths in the world. Thus people must put measures in place to predict, treat, and control the disease. The use of big data mining technique will help achieve this, therefore, reduce the mortality rate of people with the complexity. Additionally, not only the medical experts should know the use of this technique, but the entire community to save lives because the heart failures happen at unexpected times.
+\par The objectives of the future studies should be adding other features like echo and lab echo data to investigate the effect of these elements on CAD diagnosis and get a higher accuracy in predicting the complication. Furthermore, the future works should utilise more algorithms and data mining techniques to improve the findings. Finally, the studies should extend the dataset with more sick people who can help in finding interesting results which may not be apparent for the patients the dataset it introduces. Another aim of the future research should be simplifying the use of big data mining method to make it user-friendly; this will make many medical facilities adopt the idea. Moreover, the future studies should research on other tools that can improve the big data mining technique's process thus making it less costly and require less technological know-how.
+
+\section{Recommendations for Future Studies}
+Many nations in the world have Big data mining systems that research can utilise hence to enable the research potential of these information sources; the countries have to centralise resources that govern the research dataset. Some states have initiatives towards achieving this although few tackle all elements of this procedure. For example, the CALIBER platform, which is in the United Kingdom, joints a repository of big data mining phenotypes with curates register linkages combining disease registry (Myocardial Ischaemia Nation Audit Project). Additionally, it joins primary care (Clinical Practice Research Datalink), death registry (Office of National Statistics), and hospital discharge (Hospital Episode Statistics) data in over two million adults with ten million individuals’ follow-up years. However, this resource does not offer tools for bidirectional relations with big data mining information sources. The United States National Human Genome Research Institute-funded consortium, the eMERGE Network, combines big data mining with a phenotype repository from multiple secondary healthcare systems, including text and imaging, joined to genotypic data for all candidates. Finally, the Clinical Record Interactive Search system, which is at the Maudsley NHS Foundation Trust, NIHR Mental Health Biomedical Research Centre and Dementia, and South London's Dementia Unit help researchers. The Clinical Record Interactive Search system allows scholars to analyse secondary data, comprising clinical notes and other texts, through simple tools that help to identify patients are attaining specific criteria and developing the text-mining algorithms.
+\par Regarding this, the National big data mining portals can join the strengths of these projects by comprising: (i) Standards-driven types of equipment that enable reviewers to create interventional and observational studies. (ii) A countrywide catalogue of contemporary big data mining sources which is metadata standards curated. (iii)  Big data mining phenotype algorithms with an interactive thesaurus. By accomplishing this, the national catalogue can support the metadata integration and harvest from manual curation and external sources by researchers within a reproducible and standardised framework, and also offer guide people on data content and access. Due to this, users will identify information sources that provide data both across and within disease areas.
+\par The big data mining dataset and algorithms creation equipment require implementation in a way that supports modification and reuse by other users, as well as the academic citation and credit that is appropriate. Creating this form of resource enables fostering an ‘open source' approach to big data mining research in which researchers learn and collaborate with one another. It eventually produces an advance in big data mining review than any other research group in isolation can achieve.
 
 
-    % Add a bibliography block to the postdoc
-    \bibliographystyle{acm}
-    \bibliography{report}
-    
-    \end{document}
+\begin{acks}
+The authors would like to thank professor Gregor von Laszewski and his team assistance to provide me the tool and knowledge to complete this project.
+\end{acks}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{report} 
+
+
+\newpage
+\appendix
+\section{Code Reference}
+All code and files for this project can be found in the githup repository:
+\url{https://github.com/bigdata-i523/hid339/blob/master/project/code}
+
+\end{document}
