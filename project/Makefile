@@ -36,9 +36,10 @@ generate: clean iureport check log
 	$(LATEX) ${FLAGS} ${FILE}
 
 prepare:
-	cd ../../hid-sample; git pull
-	cp ../../hid-sample/paper/Makefile .
-	cp ../../hid-sample/paper/report.tex .
+	echo "no prepare"
+	# cd ../../hid-sample; git pull
+	# cp ../../hid-sample/paper/Makefile .
+	# cp ../../hid-sample/paper/report.tex .
 
 iureport:
 	cp $(SAMPLE)/tex/format/iureport.cls .
