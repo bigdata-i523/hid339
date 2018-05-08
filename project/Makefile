@@ -2,8 +2,10 @@ FILE=report
 FLAGS=-interaction nonstopmode -halt-on-error -file-line-error 
 REVIEW=review
 DEFAULT=$(FILE)
-LATEX=pydflatex
-PDFLATEX=pdflatex
+LATEX=pdflatex
+BIBTEX=bibtex
+
+SAMPLE=../../hid-sample
 
 UNAME := $(shell uname)
 
@@ -14,36 +16,50 @@ ifeq ($(UNAME), Linux)
 OPEN=xdg-open
 endif
 
-all:
-	$(LATEX) ${FILE} > tmp.log 2>&1
-	make -f Makefile bibtex > report-latex.log 2>&1 || true
-	$(LATEX) ${FILE} > tmp.log 2>&1
-	@echo  >> report-latex.log 2>&1
-	@echo "latex report" >> report-latex.log 2>&1
-	@echo "===========================================" >> report-latex.log 2>&1
-	@echo >> report-latex.log 2>&1
-	$(LATEX) ${FILE} >> report-latex.log 2>&1
-	make -f Makefile check >> report-latex.log 2>&1
 
-#	make -f Makefile quote-error >> report-latex.log 2>&1
-#	make -f Makefile yaml-error >> report-latex.log 2>&1
-#	make -f Makefile figure-check >> report-latex.log 2>&1
-#	make -f Makefile format-check >> report-latex.log 2>&1
-#	make -f Makefile none-ascii >> report-latex.log 2>&1
-#	make -f Makefile footnote-error >> report-latex.log 2>&1
-#	make -f Makefile wordcount-report >> report-latex.log 2>&1
-	cat report-latex.log
-
-simple:
-	pdflatex ${FLAGS} ${FILE} 
-	make -f Makefile bibtex
-	pdflatex ${FLAGS} ${FILE}
-	pdflatex ${FLAGS} ${FILE} 
+#make -f Makefile bibtex > report-latex.log 2>&1 || true
+#	@echo  >> report-latex.log 2>&1
+#	@echo "latex report" >> report-latex.log 2>&1
+#	@echo "===========================================" >> report-latex.log 2>&1
+#	@echo >> report-latex.log 2>&1
+#>> report-latex.log 2>&1
+#	make -f Makefile check >> report-latex.log 2>&1
 
 
-check:
-	@wget -q https://raw.githubusercontent.com/bigdata-i523/sample-hid000/master/paper1/check.py -O check.py
-	@python check.py
+all: prepare
+	make -f Makefile generate
+
+generate: clean iureport check log
+	$(LATEX) ${FLAGS} ${FILE}
+	$(BIBTEX) ${FILE}
+	$(LATEX) ${FLAGS} ${FILE}
+	$(LATEX) ${FLAGS} ${FILE}
+
+prepare:
+	cd ../../hid-sample; git pull
+	cp ../../hid-sample/paper/Makefile .
+	cp ../../hid-sample/paper/report.tex .
+
+iureport:
+	cp $(SAMPLE)/tex/format/iureport.cls .
+	cp $(SAMPLE)/tex/format/ACM-Reference-Format.bst .
+
+check: prepare
+	@$(SAMPLE)/bin/check-quotes.py content.tex
+	@chktex -q -n 13 -n 8 content.tex
+
+check-ta:
+	@python $(SAMPLE)/paper/check.py 
+
+log:
+	@echo '\\appendix' > check.tex
+	@echo '\\section{chktex}'>> check.tex
+	@echo '\\begin{tiny}'>> check.tex
+	@echo '\\begin{verbatim}'>> check.tex
+	@make check >> check.tex
+	@echo "\\end{verbatim}" >> check.tex
+	@echo '\\end{tiny}'>> check.tex
+	@echo "creating check.tex"
 
 bibtex:
 	@echo 
@@ -201,6 +217,9 @@ pack:
 clean:
 	rm -rf *~ *.aux *.bbl *.dvi *.log *.out *.blg *.pdf *.toc *.fdb_latexmk *.fls *.fff *.lof *.lot *.ttt *.cut
 	rm -rf _region_.*
+	rm -f iureport.cls
+	rm -f ACM-Reference-Format.bst
+	rm -f check.tex
 
 view:
 	$(OPEN) ${FILE}.pdf
@@ -242,3 +261,7 @@ bib-extract:
 skim:
 	echo $(DEFAULT)
 	open -a /Applications/skim.app $(DEFAULT).pdf
+
+doc:
+	make
+	mv report.pdf ../paper-instructions.pdf
